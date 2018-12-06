@@ -1,1 +1,40 @@
-/* Main CSS Stylesheet */
+ /* ================================
+    Author: Kevin Green 
+    Main CSS Stylesheet 
+    Fonts: Raleway & Open Sans
+    Awesome: #FF1654
+    Very Pale Yellow: #F3FFBD
+    Sea Foam Green: #B2DBBF
+    Green Sheen: #70C1B3
+    Lapis Lazuli: #247BA0
+================================*/
+
+
+h1 {
+    font-family: "Raleway", sans-serif;
+}
+
+ /* ================================
+            Preloader
+================================*/
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("../img/preloader/preloader.gif");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
