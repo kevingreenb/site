@@ -9,7 +9,7 @@
     Lapis Lazuli: #247BA0
 ================================*/
  /* ================================
-            HTML, Body
+            HTML, Body and General
 ================================*/
 
  html,
@@ -46,6 +46,18 @@
      font-family: "Raleway", sans-serif;
  }
 
+ img {
+     -webkit-filter: grayscale(100%);
+     Safari 6.0 - 9.0 filter: grayscale(100%);
+ }
+
+ /*
+ video {
+     -webkit-filter: grayscale(100%);
+      Safari 6.0 - 9.0 
+     filter: grayscale(100%);
+ }
+*/
  /* ================================
             Preloader
 ================================*/
@@ -89,7 +101,7 @@
      min-height: 100%;
      width: auto;
      height: auto;
-     z-index: -1;
+     z-index: -9999;
      background: url("../video/home-vid.jpg") no-repeat;
      background-size: cover;
  }
@@ -178,6 +190,7 @@
  #arrow-down:focus {
      color: #FF1652;
  }
+
  /* ================================
             Content Box
 ================================*/
@@ -185,9 +198,10 @@
      padding: 120px 0;
  }
 
-.content-box-md {
-    padding: 100px 0;
-}
+ .content-box-md {
+     padding: 100px 0;
+ }
+
  /* ================================
             Vertical Headings
 ================================*/
@@ -231,43 +245,141 @@
      margin: 0 auto;
  }
 
-#little {
-    color: #FF1654;
-}
+ #little {
+     color: #FF1654;
+ }
 
  /* ================================
             About 02
 ================================*/
-#mission, #vision, #passion {
 
+ .about-item i {
+     font-size: 20px;
+     margin: 0;
+     color: #000;
+ }
+
+ #about-02 {
+     background-color: #f4f4f4;
+ }
+
+ .about-item {
+     background-color: #fff;
+     padding: 80px 30px;
+     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+ }
+
+ .about-item h3 {
+     font-size: 24px;
+     margin-bottom: 10px;
+     color: #000;
+ }
+
+ .about-item hr {
+     width: 45px;
+     height: 3px;
+     background-color: #ff1654;
+     margin: 0 auto;
+     border: none;
+ }
+
+ .about-item p {
+     margin-top: 20px;
+     color: #000
+ }
+
+ /* Hover State */
+ .about-item:hover i,
+ .about-item:hover h3,
+ .about-item:hover p {
+     color: #fff;
+ }
+
+ .about-item:hover i {
+     transform: translateY(-20px);
+ }
+
+ .about-item:hover {
+     background-color: #262626;
+ }
+
+ /* Smooth transition */
+ .about-item,
+ .about-item:hover i,
+ .about-item:hover h3,
+ .about-item:hover p {
+     -webkit-transition: all 400ms ease-in-out;
+     transition: all 400ms ease-in-out;
+     border-radius: 5px;
+ }
+
+ /* ================================
+            Team
+================================*/
+ #team-left {
+     min-height: 160px;
+ }
+
+ .team-member {
+     margin: 8px;
+ }
+
+ /* ================================
+            Slider Button
+================================*/
+ .owl-theme .owl-nav [class*=owl-] {
+     color: #212226;
+     background: none;
+     margin: 0 20px;
+     font-size: 40px !important;
+ }
+
+ .owl-theme .owl-nav [class*=owl-]:hover {
+     background: none;
+     color: #212226;
+
+ }
+
+ /* ================================
+            Skill Section
+================================*/
+.skill {
+    margin: 20px;
 }
-.about-item i {
-    font-size: 20px;
+
+.skill h4 {
+    line-height: 62px;
     margin: 0;
-    color: #5a5a5a;
+    font-weight: normal;
 }
-
-#about-02 {
-    background-color: #f4f4f4;
+.progress {
+    height: 25px;
+    background: #f4f4f4;
+    overflow: visible;
 }
-.about-item {
-    background-color: #fff;
-    padding: 80px 30px;
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.1);    box-shadow: 0 0 10px rgba(0,0,0,.1);
+.progress-bar {
+    background-color: #4f4f4f;
+    position: relative;
+    border-radius: 3px;
 }
-.about-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.progress-bar span {
+    font-size: 11px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    background: #212226;
+    padding: 3px;
+    position: absolute;
+    left: 97%;
+    top: -47px;
+    border-radius: 10%;
 }
-
-.about-item hr {
-    width: 45px;
-    height: 3px;
-    background-color: #ff1654;
-    margin: 0 auto;
-    border: none;
-}
-
-.about-item p {
-    margin-top: 20px;
+.progress-bar span:before {
+    content: "";
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 23%;
 }
