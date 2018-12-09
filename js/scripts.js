@@ -42,8 +42,8 @@
  /* ================================
             Responsive Tabs
 ================================*/
-$(function(){
-    $("#services-tabs").responsiveTabs({
-        animation: 'slide'
-    });
-});
+ $(function () {
+     $("#services-tabs").responsiveTabs({
+         animation: 'slide'
+     });
+ });
