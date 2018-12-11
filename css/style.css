@@ -46,7 +46,7 @@
      font-family: "Raleway", sans-serif;
  }
 
-/*
+ /*
  img {
      -webkit-filter: grayscale(100%);
      Safari 6.0 - 9.0 filter: grayscale(100%);
@@ -367,15 +367,18 @@
             Slider Button
 ================================*/
  .owl-theme .owl-nav [class*=owl-] {
-     color: #ff1654 !important;
+     color: #000 !important;
      background: none;
      margin: 0 20px;
      font-size: 40px !important;
+     outline: 0;
  }
 
  .owl-theme .owl-nav [class*=owl-]:hover {
      background: none;
-     color: #ff1654;
+     color: #ff1654 !important;
+     -webkit-transform: scale(1.1);
+     transform: scale(1.4);
  }
 
  /* ================================
@@ -563,19 +566,146 @@
      line-height: 24px;
      margin-bottom: 30px;
  }
-.service-tab {
-    background-color: #fff;
-}
+
+ .service-tab {
+     background-color: #fff;
+ }
 
  /* ================================
     Portfolio
 ================================*/
-#portfolio .vertical-heading {
-    margin-bottom: 50px;
-}
-.row.no-gutters [class*=col-] {
-    padding: 0px;
-}
+ #portfolio .vertical-heading {
+     margin-bottom: 50px;
+ }
+
+ .row.no-gutters [class*=col-] {
+     padding: 0px;
+ }
+
+ .portfolio-item {
+     overflow: hidden;
+     position: relative;
+ }
+
+ /* Filters CSS */
+ #isotope-filters {
+     margin-bottom: 10px;
+     padding: 20px 25px 20px 0;
+ }
+
+ #isotope-filters button {
+     font-family: "Raleway", sans-serif;
+     font-size: 12px;
+     font-weight: 700;
+     text-transform: uppercase;
+     background: transparent;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+     padding-right: 35px;
+     outline: 0;
+ }
+
+ #isotope-filters button span {
+     display: block;
+     padding-bottom: 5px;
+     -webkit-transition: border-color .4s ease-in-out;
+     transition: border-color .4s ease-in-out;
+ }
+
+ #isotope-filters button.active span {
+     color: #ff1654;
+     border-bottom: 3px solid #ff1654;
+
+ }
+
+ /* Zoom Effect */
+ .portfolio-item img {
+     width: 100%;
+     height: auto;
+     -webkit-transition: -webkit-transform .5s ease;
+     transition: -webkit-transform .5s ease;
+     transition: transform .5s ease;
+     transition: transform .5s ease, -webkit-transform .5s ease;
+ }
+
+ .portfolio-item img:hover {
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+ }
+
+ /* Overlay Effect */
+ .portfolio-item-overlay {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgba(14, 14, 17, 0.9);
+     cursor: -webkit-zoom-in;
+     cursor: zoom-in;
+     opacity: 0;
+ }
+
+ /* Item Details Effect */
+ .portfolio-item-details {
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     left: 0;
+     -webkit-transform: translateY(-50%);
+     transform: translateY(-50%);
+ }
+
+ .portfolio-item-details h3 {
+     color: #ff1654;
+     text-transform: uppercase;
+     font-size: 30px;
+     margin: 0;
+     padding: 0;
+     -webkit-transform: translateY(-20%);
+     transform: translateY(-20%);
+     -webkit-transition: all 0.8s;
+     transition: all 0.8s;
+ }
+
+ .portfolio-item-details span {
+     display: inline-block;
+     border-top: 1px solid #fff;
+     border-bottom: 1px solid #fff;
+     height: 6px;
+     width: 30px;
+     margin: 11px auto 5px auto;
+ }
+
+ .portfolio-item-details p {
+     font-size: 17px;
+     color: #fff;
+     text-transform: uppercase;
+     margin: 0;
+     padding: 0;
+     -webkit-transform: translateY(20%);
+     transform: translateY(20%);
+     -webkit-transition: all 0.8s;
+     transition: all 0.8s;
+ }
+
+ /* Show Overlay on mouse over */
+ .portfolio-item:hover .portfolio-item-details h3 {
+     -webkit-transform: translateY(0);
+     transform: translateY(0);
+ }
+
+ .portfolio-item:hover .portfolio-item-details p {
+     -webkit-transform: translateY(0);
+     transform: translateY(0);
+ }
+
+ .portfolio-item:hover .portfolio-item-overlay {
+     opacity: 1;
+     -webkit-transition: all 0.8s ease;
+     transition: all 0.8s ease;
+ }
+
  /* ================================
             Shadow
 ================================*/

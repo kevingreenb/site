@@ -31,6 +31,9 @@
     <!-- Responsive Tabs -->
     <link rel="stylesheet" href="css/responsivetabs/responsive-tabs.css">
 
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific/magnific-popup.css">
+
 </head>
 
 <body>
@@ -150,18 +153,17 @@
         <section id="team">
             <div class="content-box-lg">
                 <div class="container">
-                    <!-- Members -->
-
+                    <h2>My Focus</h2>
                     <div id="progress-elements">
                         <!-- Progress Bars -->
                         <div class="row">
                             <div class="col-md-6">
                                 <!-- Skill 01 -->
                                 <div class="skill">
-                                    <h4>Eating</h4>
+                                    <h4>Configure Price Quote (CPQ)</h4>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                            <span>95%</span>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span>90%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +172,7 @@
                             <div class="col-md-6">
                                 <!-- Skill 02 -->
                                 <div class="skill">
-                                    <h4>Cuddling</h4>
+                                    <h4>JavaScript</h4>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
                                             <span>80%</span>
@@ -182,10 +184,10 @@
                             <div class="col-md-6">
                                 <!-- Skill 03 -->
                                 <div class="skill">
-                                    <h4>Noise Making</h4>
+                                    <h4>Customer Service</h4>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                            <span>60%</span>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span>95%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -194,10 +196,10 @@
                             <div class="col-md-6">
                                 <!-- Skill 04 -->
                                 <div class="skill">
-                                    <h4>Sleeping</h4>
+                                    <h4>Web Development</h4>
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                            <span>100%</span>
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                            <span>85%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -309,6 +311,7 @@
                         <li><a href="#service-tab-02">SQL Certified</a></li>
                         <li><a href="#service-tab-03">Cisco Certified </a></li>
                         <li><a href="#service-tab-04">ITILv3 Certified</a></li>
+                        <li><a href="#service-tab-07">Data Analyst Nanodegree</a></li>
                         <li><a href="#service-tab-05">Microsoft Access Certified</a></li>
                         <li><a href="#service-tab-06">Microsoft Excel Certified</a></li>
                     </ul>
@@ -439,207 +442,292 @@
                         </div>
                     </div>
                     <!-- End Service Tab 06 -->
+                    <!-- Service Tab 07 -->
+                    <div id="service-tab-07" class="service-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="img/services/da-ndeg.png" alt="Creativity">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tab-bg">
+                                        <h2>07</h2>
+                                        <h3>Udacity Data Analyst Nanodegree</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore hic error laboriosam eveniet veniam tempore sunt maxime cupiditate veritatis expedita, vel pariatur recusandae accusantium, dicta eaque atque aliquid vitae dolor.</p>
+                                        <div id="service-02-btn">
+                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Service Tab 01 -->
                 </div>
             </div>
         </div>
     </section>
     <!--Services End-->
 
-    <!--Portfolio -->
+    <!-- Portfolio -->
     <section id="portfolio">
+
         <div class="content-box-md">
+
             <div class="container">
+
                 <div class="row">
-                    <div class="col-md-12">
+
+                    <div class="col-md-12 wow slideInLeft">
+
                         <div class="vertical-heading">
-                            <h5>Find My Work</h5>
-                            <h2>My <strong id="little">Projects</strong><br></h2>
+                            <h5>Find Out Work</h5>
+                            <h2>About My<strong>Projects</strong></h2>
                         </div>
+
+                    </div>
+
+                    <div class="col-md-12">
+
                         <!-- Portfolio Items Filters -->
-                        <div class="col-md-12">
-                            <div id="isotope-filters">
-                                <button class="btn" data-filter="*"><span>All</span></button>
-                                <button class="btn" data-filter=".logo"><span>Logo</span></button>
-                                <button class="btn" data-filter=".web"><span>Web</span></button>
-                                <button class="btn" data-filter=".mobile"><span>Mobile</span></button>
-                                <button class="btn" data-filter=".desktop"><span>Desktop</span></button>
-                            </div>
+                        <div id="isotope-filters">
+
+                            <button class="btn active" data-filter="*"><span>All</span></button>
+                            <button class="btn" data-filter=".logo"><span>Logo</span></button>
+                            <button class="btn" data-filter=".web"><span>Web</span></button>
+                            <button class="btn" data-filter=".mobile"><span>Mobile</span></button>
+                            <button class="btn" data-filter=".desktop"><span>Desktop</span></button>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
             <!-- Portfolio Items Wrapper -->
-            <section id="portfolio-wrapper">
+            <section id="portfolio-wrapper" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+
                 <div class="container-fluid">
+
                     <div class="row no-gutters">
+
                         <div id="isotope-container">
-                            <div class="col-md-3 desktop">
-                                <!-- Portofio Item 01 -->
+
+                            <div class="col-md-3 col-sm-6 col-xs-12 desktop">
+
+                                <!-- Portfolio Item 01 -->
                                 <div class="portfolio-item">
-                                    <a href="img/portfolio/001.jpg" alt="Add Description">
-                                        <img src="img/portfolio/001.jpg" class="img-responsive" alt="portfolio-01">
+
+                                    <a href="img/portfolio/001.jpg" title="Add Description">
+                                        <img src="img/portfolio/001.jpg" class="img-responsive" alt="portfolio 01">
+
                                         <div class="portfolio-item-overlay">
                                             <div class="portfolio-item-details text-center">
-                                                <!-- Iteam Header -->
+
+                                                <!-- Item Header -->
                                                 <h3>Logo</h3>
 
                                                 <!-- Item Strips -->
                                                 <span></span>
 
-                                                <!-- Item Descriptions -->
-                                                <p>Desktop</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 web">
-                                <!-- Portofio Item 02 -->
-                                <div class="portfolio-item">
-                                    <a href="img/portfolio/002.jpg" alt="Add Description">
-                                        <img src="img/portfolio/002.jpg" class="img-responsive" alt="portfolio-02">
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-                                                <!-- Iteam Header -->
-                                                <h3>Photoshop</h3>
-
-                                                <!-- Item Strips -->
-                                                <span></span>
-
-                                                <!-- Item Descriptions -->
-                                                <p>Web Design, Illustration</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 web mobile logo">
-                                <!-- Portofio Item 03 -->
-                                <div class="portfolio-item">
-                                    <a href="img/portfolio/003.jpg" alt="Add Description">
-                                        <img src="img/portfolio/003.jpg" class="img-responsive" alt="portfolio-03">
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-                                                <!-- Iteam Header -->
-                                                <h3>Web Design</h3>
-
-                                                <!-- Item Strips -->
-                                                <span></span>
-
-                                                <!-- Item Descriptions -->
-                                                <p>Video, Web</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 logo web">
-                                <!-- Portofio Item 04 -->
-                                <div class="portfolio-item">
-                                    <a href="img/portfolio/004.jpg" alt="Add Description">
-                                        <img src="img/portfolio/004.jpg" class="img-responsive" alt="portfolio-04">
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-                                                <!-- Iteam Header -->
-                                                <h3>Logo</h3>
-
-                                                <!-- Item Strips -->
-                                                <span></span>
-
-                                                <!-- Item Descriptions -->
+                                                <!-- Item Description -->
                                                 <p>Desktop, Design</p>
+
                                             </div>
+
                                         </div>
                                     </a>
+
                                 </div>
+
                             </div>
-                            <div class="col-md-3 desktop">
-                                <!-- Portofio Item 01 -->
+                            <div class="col-md-3 col-sm-6 col-xs-12 web">
+                                <!-- Portfolio Item 02 -->
                                 <div class="portfolio-item">
-                                    <a href="img/portfolio/005.jpg" alt="Add Description">
-                                        <img src="img/portfolio/005.jpg" class="img-responsive" alt="portfolio-05">
+
+                                    <a href="img/portfolio/002.jpg" title="Add Description">
+                                        <img src="img/portfolio/002.jpg" class="img-responsive" alt="portfolio 02">
+
                                         <div class="portfolio-item-overlay">
                                             <div class="portfolio-item-details text-center">
-                                                <!-- Iteam Header -->
+
+                                                <!-- Item Header -->
                                                 <h3>Photoshop</h3>
 
                                                 <!-- Item Strips -->
                                                 <span></span>
 
-                                                <!-- Item Descriptions -->
+                                                <!-- Item Description -->
                                                 <p>Web Design, Illustration</p>
+
                                             </div>
+
                                         </div>
                                     </a>
+
                                 </div>
                             </div>
-                            <div class="col-md-3 desktop">
-                                <!-- Portofio Item 06 -->
+                            <div class="col-md-3 col-sm-6 col-xs-12 web mobile logo">
+                                <!-- Portfolio Item 03 -->
                                 <div class="portfolio-item">
-                                    <a href="img/portfolio/006.jpg" alt="Add Description">
-                                        <img src="img/portfolio/006.jpg" class="img-responsive" alt="portfolio-06">
+
+                                    <a href="img/portfolio/003.jpg" title="Add Description">
+                                        <img src="img/portfolio/003.jpg" class="img-responsive" alt="portfolio 03">
                                         <div class="portfolio-item-overlay">
                                             <div class="portfolio-item-details text-center">
-                                                <!-- Iteam Header -->
-                                                <h3>Logo</h3>
-
+                                                <!-- Item Header -->
+                                                <h3>
+                                                    Web Design
+                                                </h3>
                                                 <!-- Item Strips -->
                                                 <span></span>
-
-                                                <!-- Item Descriptions -->
-                                                <p>Desktop, Design</p>
+                                                <!-- Item Description -->
+                                                <p>
+                                                    Video, web
+                                                </p>
                                             </div>
                                         </div>
                                     </a>
+
                                 </div>
                             </div>
-                            <div class="col-md-3 web mobile">
-                                <!-- Portofio Item 07 -->
+                            <div class="col-md-3 col-sm-6 col-xs-12 logo web">
+                                <!-- Portfolio Item 04 -->
                                 <div class="portfolio-item">
-                                    <a href="img/portfolio/007.jpg" alt="Add Description">
-                                        <img src="img/portfolio/007.jpg" class="img-responsive" alt="portfolio-07">
+
+                                    <a href="img/portfolio/004.jpg" title="Add Description">
+                                        <img src="img/portfolio/004.jpg" class="img-responsive" alt="portfolio 04">
                                         <div class="portfolio-item-overlay">
                                             <div class="portfolio-item-details text-center">
-                                                <!-- Iteam Header -->
-                                                <h3>Photoshop</h3>
-
+                                                <!-- Item Header -->
+                                                <h3>
+                                                    Logo
+                                                </h3>
                                                 <!-- Item Strips -->
                                                 <span></span>
-
-                                                <!-- Item Descriptions -->
-                                                <p>Web Design, Illustration</p>
+                                                <!-- Item Description -->
+                                                <p>
+                                                    desktop, Design
+                                                </p>
                                             </div>
                                         </div>
                                     </a>
+
                                 </div>
                             </div>
-                            <div class="col-md-3 mobile">
-                                <!-- Portofio Item 08 -->
+                            <div class="col-md-3 col-sm-6 col-xs-12 web">
+                                <!-- Portfolio Item 05 -->
                                 <div class="portfolio-item">
-                                    <a href="img/portfolio/008.jpg" alt="Add Description">
-                                        <img src="img/portfolio/008.jpg" class="img-responsive" alt="portfolio-08">
+
+                                    <a href="img/portfolio/005.jpg" title="Add Description">
+                                        <img src="img/portfolio/005.jpg" class="img-responsive" alt="portfolio 05">
                                         <div class="portfolio-item-overlay">
                                             <div class="portfolio-item-details text-center">
-                                                <!-- Iteam Header -->
-                                                <h3>Mobile Design</h3>
-
+                                                <!-- Item Header -->
+                                                <h3>
+                                                    Photoshop
+                                                </h3>
                                                 <!-- Item Strips -->
                                                 <span></span>
-
-                                                <!-- Item Descriptions -->
-                                                <p>Video, Web</p>
+                                                <!-- Item Description -->
+                                                <p>
+                                                    Web Design, Illustration
+                                                </p>
                                             </div>
                                         </div>
                                     </a>
+
                                 </div>
                             </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 logo desktop">
+                                <!-- Portfolio Item 06 -->
+                                <div class="portfolio-item">
+
+                                    <a href="img/portfolio/006.jpg" title="Add Description">
+                                        <img src="img/portfolio/006.jpg" class="img-responsive" alt="portfolio 06">
+                                        <div class="portfolio-item-overlay">
+                                            <div class="portfolio-item-details text-center">
+                                                <!-- Item Header -->
+                                                <h3>
+                                                    Logo
+                                                </h3>
+                                                <!-- Item Strips -->
+                                                <span></span>
+                                                <!-- Item Description -->
+                                                <p>
+                                                    desktop, Design
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 web mobile">
+                                <!-- Portfolio Item 07 -->
+                                <div class="portfolio-item">
+
+                                    <a href="img/portfolio/007.jpg" title="Add Description">
+                                        <img src="img/portfolio/007.jpg" class="img-responsive" alt="portfolio 07">
+
+                                        <div class="portfolio-item-overlay">
+                                            <div class="portfolio-item-details text-center">
+                                                <!-- Item Header -->
+                                                <h3>
+                                                    Photoshop
+                                                </h3>
+                                                <!-- Item Strips -->
+                                                <span></span>
+                                                <!-- Item Description -->
+                                                <p>
+                                                    Web Design, Illustration
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 web mobile">
+                                <!-- Portfolio Item 08 -->
+                                <div class="portfolio-item">
+
+                                    <a href="img/portfolio/008.jpg" title="Add Description">
+                                        <img src="img/portfolio/008.jpg" class="img-responsive" alt="portfolio 08">
+                                        <div class="portfolio-item-overlay">
+                                            <div class="portfolio-item-details text-center">
+                                                <!-- Item Header -->
+                                                <h3>
+                                                    Mobile Design
+                                                </h3>
+                                                <!-- Item Strips -->
+                                                <span></span>
+                                                <!-- Item Description -->
+                                                <p>
+                                                    Video, web
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </section>
+
         </div>
+
     </section>
-    <!--Portfolio End-->
+    <!-- Portfolio Ends -->
+
 
     <!-- Pets -->
     <section id="pets">
@@ -699,6 +787,8 @@
     <script src="js/responsivetabs/jquery.responsiveTabs.min.js"></script>
     <!-- Isotope -->
     <script src="js/Isotope/isotope.pkgd.min.js"></script>
+    <!-- Magnific -->
+    <script src="js/magnific/jquery.magnific-popup.min.js"></script>
     <!-- Custom JS -->
     <script src="js/scripts.js"></script>
 </body>
