@@ -7,12 +7,12 @@
  });
 
  /* ================================
-            Preloader
+            Pets
 ================================*/
  $(function () { // Short form on ready method
      $("#team-members").owlCarousel({
          items: 2,
-         autoplay: true,
+         autoplay: false,
          smartSpeed: 1000,
          loop: true,
          autoplayHoverPause: true,
@@ -85,4 +85,62 @@
          }
      });
 
+ });
+ /* =========================================
+                Experience
+ ============================================ */
+ $(function () { // Short form on ready method
+     $("#testimonial-slider").owlCarousel({
+         items: 1,
+         autoplay: true,
+         smartSpeed: 1000,
+         loop: true,
+         autoplayHoverPause: true,
+         nav: true,
+         dots: false,
+         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+     });
+ });
+ /* =========================================
+                Stats
+ ============================================ */
+ $(function () {
+     $('.counter').counterUp({
+         delay: 10,
+         time: 2000
+     });
+ });
+
+ /* =========================================
+                Navigation
+ ============================================ */
+
+ $(function () {
+     showHideNav();
+
+     $(window).scroll(function () {
+         showHideNav()
+     });
+
+     function showHideNav() {
+         if ($(window).scrollTop() > 50) {
+             $("nav").addClass("white-nav-top");
+             $("#back-to-top").fadeIn();
+         } else {
+             $("nav").removeClass("white-nav-top");
+             $("#back-to-top").fadeOut();
+         }
+     }
+ });
+
+ // Smooth Scrolling 
+ $(function () {
+     $("a.smooth-scroll").click(function (event) {
+         event.preventDefault();
+         //get section id
+         var section_id = $(this).attr("href");
+         $("html, body").animate({
+             scrollTop: $(section_id).offset().top - 64
+         }, 1250, "easeInOutExpo");
+     });
  });

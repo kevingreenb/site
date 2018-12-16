@@ -34,13 +34,40 @@
     <!-- Magnific Popup -->
     <link rel="stylesheet" href="css/magnific/magnific-popup.css">
 
+
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
     <!-- Preloader -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="site-nav-wrapper">
+
+                </div>
+
+                <!-- Main Menu -->
+                <div class="container">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a class="smooth-scroll" href="#home">Home</a></li>
+                            <li><a class="smooth-scroll" href="#about">About</a></li>
+                            <li><a class="smooth-scroll" href="#testimonials">Experience</a></li>
+                            <li><a class="smooth-scroll" href="#services">Services</a></li>
+                            <li><a class="smooth-scroll" href="#services-02">Certifications</a></li>
+                            <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--- End --->
 
     <!-- Home -->
     <section id="home">
@@ -63,17 +90,17 @@
                     <h1 id="home-head-2">I'm <span>Kevin</span></h1>
                 </div>
                 <div id="home-text">
-                    <p>An IT enthusiast who has spent his entire professional carreer exploring the curiosities of technology.</p>
+                    <p>An IT enthusiast who has spent his entire professional career exploring the curiosities of technology.</p>
                 </div>
                 <div id="home-btn">
-                    <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Contact Me</a>
+                    <a class="btn btn-general btn-home smooth-scroll" href="#contact" title="Start Now" role="button">Contact Me</a>
 
                 </div>
             </div>
         </div>
     </section>
     <!-- Arrow Down -->
-    <a href="#about" id="arrow-down">
+    <a class="smooth-scroll" href="#about" id="arrow-down">
         <i class="fa fa-angle-down"></i>
     </a>
     <!-- Home Ends -->
@@ -98,18 +125,18 @@
                         <!-- About Right Side -->
                         <div class="col-md-6">
                             <div id="about-right">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores aperiam, quia nobis neque nulla quas, aut quaerat sed dicta, aliquid est accusamus quo ut esse laboriosam sit dolorem earum distinctio.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aut, fuga magni nihil perspiciatis vitae veritatis, quo ullam error hic odio consectetur provident, modi molestiae earum inventore officia in necessitatibus!</p>
+                                <p>I wrote my first bits of code when I was 7 years old, I found animating things with scripts was more entertaining than video games. I've been coding things ever since.</p>
+                                <p>During my adulthood, I've made a happy living out of my passion for technology. I've worked providing desktop support, administrating servers and networks, developed my own applications and during my spare time. Currently, I am a Configure Price Quote (CPQ) Professional who learns something new every day.</p>
                             </div>
                         </div>
-                        <!-- About Bottom -->
+                        <!-- About Bottom 
                         <div class="row">
                             <div class="col-md-12">
                                 <div id="about-bottom">
                                     <img src="img/about/yerupaja.jpg" alt="About Us" class="img-responsive">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -125,7 +152,7 @@
                                 <i class="fa fa-rocket"></i>
                                 <h3>Mission</h3>
                                 <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam expedita minus sit non sequi cumque molestias quidem reprehenderit, deleniti modi natus magni explicabo commodi, libero ducimus nisi! Unde, facere, iste.</p>
+                                <p>To be the trusty "goto" person that no one is afraid of asking questions when there is a need for a solution while focusing significantly on delivering an excellent customer experience.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -133,7 +160,7 @@
                                 <i class="fa fa-eye"></i>
                                 <h3>Vision</h3>
                                 <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam expedita minus sit non sequi cumque molestias quidem reprehenderit, deleniti modi natus magni explicabo commodi, libero ducimus nisi! Unde, facere, iste.</p>
+                                <p>Facilitate the use of technology, turning seemingly complicated topics into simple and friendly concepts that everybody can understand and benefit from.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -141,7 +168,7 @@
                                 <i class="fa fa-pencil"></i>
                                 <h3>Passion</h3>
                                 <hr>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam expedita minus sit non sequi cumque molestias quidem reprehenderit, deleniti modi natus magni explicabo commodi, libero ducimus nisi! Unde, facere, iste.</p>
+                                <p>Learning new concepts and technologies every day to become a better professional with stronger abilities and help others grow to positively impact the society we live in.</p>
                             </div>
                         </div>
                     </div>
@@ -172,7 +199,7 @@
                             <div class="col-md-6">
                                 <!-- Skill 02 -->
                                 <div class="skill">
-                                    <h4>JavaScript</h4>
+                                    <h4>Data Analysis</h4>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
                                             <span>80%</span>
@@ -212,6 +239,117 @@
         </section>
     </section> <!-- End About -->
 
+    <!-- Experience -->
+    <section id="testimonials">
+        <div class="content-box-">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="-heading">
+                            <h5>Work History</h5>
+                            <h2>Professional <strong id="little">Experience</strong></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div id="testimonial-slider" class="owl-carousel owl-theme">
+                            <!-- Testimonial 01 -->
+                            <div class="testimonial">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3> CPQ Technical Engineer</h3>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>Successfully implemented a demo CPQ Site.</li>
+                                    <li>Solve website coding issues with proprietary
+                                        scripting languages.</li>
+                                    <li>Troubleshoot integration issues with REST
+                                        and SOAP calls.</li>
+                                    <li>Troubleshoot implemented site functionality
+                                        for customer sites.</li>
+                                    <li>Make CPQ performance recommendations.</li>
+                                    <li>Becoming SME in Web Services.</li>
+                                </ul>
+                                <div class="employer">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="img/testimonial/oracle.png" alt="employer" class="img-responsive img-circle">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="author-name-des">
+                                                <h4>Oracle</h4>
+                                                <h4>September 2017 - Present</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3>Helpdesk Coordinator II</h3>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>Promoted to tier II for outstanding
+                                        performance.</li>
+
+                                    <li>Nominated and awarded for exceeding
+                                        expectations within my role. (Received 5
+                                        service values awards).</li>
+
+                                    <li>Due to excellent performance, promoted
+                                        to Helpdesk Coordinator I.</li>
+                                </ul>
+                                <div class="employer">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="img/testimonial/nsuhs.png" alt="employer" class="img-responsive img-circle">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="author-name-des">
+                                                <h4>NorthShore University HealthSystem</h4>
+                                                <h4>July 2015 - March 2017</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3>Computer Instructor for Senior Citizens</h3>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>Teach seniors how to use Microsoft Office.</li>
+
+                                    <li>Clean their computers from viruses.</li>
+
+                                    <li>Integrate their mobile devices with their computers and cloud applications.</li>
+                                </ul>
+                                <div class="employer">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="img/testimonial/volunteer.png" alt="employer" class="img-responsive img-circle">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="author-name-des">
+                                                <h4>Personal Project</h4>
+                                                <h4>July 2015 - Present</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-->
+
     <!-- Statement -->
     <section id="statement">
         <div class="content-box-lg">
@@ -219,7 +357,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div id="tech-statement" class="text-center">
-                            <h3> <i class="fa fa-quote-left"></i>I love designing websites and building web applications, <br> I also specialize in Configure Price Quote cloud environments.<i class="fa fa-quote-right"></i></h3>
+                            <h3> <i class="fa fa-quote-left"></i> I love designing minimalist websites and building web applications, <br> I also specialize in providing solutions for Configure Price Quote cloud environments.<i class="fa fa-quote-right"></i></h3>
                             <p> - Kevin Green </p>
                         </div>
                     </div>
@@ -239,12 +377,12 @@
                         <div class="col-md-12 text-center">
                             <div class="horizontal-heading">
                                 <h5>What I do</h5>
-                                <h2>My <strong>Serivces</strong></h2>
+                                <h2>My <strong>Services</strong></h2>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <img src="img/services/laptop-lamp.png" alt="laptop" class="img-responsive">
+                        <img src="img/services/laptop-with-lamp.png" alt="laptop" class="img-responsive">
                     </div>
                     <div class="col-md-5">
                         <!-- Service 01 -->
@@ -252,13 +390,13 @@
                             <div class="row">
                                 <div class="col-md-2">
                                     <div class="icon text-right">
-                                        <i class="fa fa-paint-brush"></i>
+                                        <i class="fa fa-laptop"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-10">
                                     <h5> Service 01 </h5>
-                                    <h4> Web Desing </h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita optio qui labore voluptatum fugit laudantium nobis ipsam harum cumque perferendis a nostrum reiciendis placeat, autem. Temporibus aspernatur consectetur, eius aut.</p>
+                                    <h4> Configure Price Quote </h4>
+                                    <p> I currently provide support for Oracle's CPQ environments formerly known as Big Machines. During my tenure with Oracle I've closed approximately 400 cases and supported many Fortune 500 organizations.</p>
                                 </div>
                             </div>
                         </div>
@@ -268,13 +406,13 @@
                             <div class="row">
                                 <div class="col-md-2">
                                     <div class="icon text-right">
-                                        <i class="fa fa-laptop"></i>
+                                        <i class="fa fa-paint-brush"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-10">
                                     <h5> Service 02 </h5>
-                                    <h4> Configure Price Quote </h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita optio qui labore voluptatum fugit laudantium nobis ipsam harum cumque perferendis a nostrum reiciendis placeat, autem. Temporibus aspernatur consectetur, eius aut.</p>
+                                    <h4> Web Design</h4>
+                                    <p>Understanding CSS3 has been an enjoyable challenge which has allowed me to create designs and animations that I would have previously considered impossible, more and more it's starting to work like Photoshop! I'm also able to quickly build sites with Bootstrap.</p>
                                 </div>
                             </div>
                         </div>
@@ -290,7 +428,7 @@
                                 <div class="col-md-10">
                                     <h5> Service 03 </h5>
                                     <h4> Computer Repair for Seniors</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita optio qui labore voluptatum fugit laudantium nobis ipsam harum cumque perferendis a nostrum reiciendis placeat, autem. Temporibus aspernatur consectetur, eius aut.</p>
+                                    <p>When I'm not at work, I volunteer to help seniors with their computer needs. In the process, I've learned how vulnerable they are to cyber scams, and I do my best to educate them into being savvier computer users.</p>
                                 </div>
                             </div>
                         </div>
@@ -302,7 +440,7 @@
 
         <div id="services-02">
             <div class="content-box-md">
-                <div class="text-center">
+                <div class="horizontal-heading text-center">
                     <h2>Certifications</h2>
                 </div>
                 <div id="services-tabs">
@@ -326,10 +464,7 @@
                                     <div class="tab-bg">
                                         <h2>01</h2>
                                         <h3>Oracle CPQ Cloud Service 2017 Certified Implementation Specialist</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore hic error laboriosam eveniet veniam tempore sunt maxime cupiditate veritatis expedita, vel pariatur recusandae accusantium, dicta eaque atque aliquid vitae dolor.</p>
-                                        <div id="service-02-btn">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
-                                        </div>
+                                        <p>I've supplemented my experience with Oracle's Configure Price Quote products by obtaining a relatively new certification. This cert covers topics about implementations of CPQ environments, best practices and troubleshooting of such.</p>
                                     </div>
                                 </div>
                             </div>
@@ -347,10 +482,7 @@
                                     <div class="tab-bg">
                                         <h2>02</h2>
                                         <h3>Oracle Database SQL Certified</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore hic error laboriosam eveniet veniam tempore sunt maxime cupiditate veritatis expedita, vel pariatur recusandae accusantium, dicta eaque atque aliquid vitae dolor.</p>
-                                        <div id="service-02-btn">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
-                                        </div>
+                                        <p>This certification targets database professionals who must demonstrate expertise in querying storages of data with Structured Query Language.</p>
                                     </div>
                                 </div>
                             </div>
@@ -368,10 +500,8 @@
                                     <div class="tab-bg">
                                         <h2>03</h2>
                                         <h3>CCNA Routing &#38; Switching Certified</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore hic error laboriosam eveniet veniam tempore sunt maxime cupiditate veritatis expedita, vel pariatur recusandae accusantium, dicta eaque atque aliquid vitae dolor.</p>
-                                        <div id="service-02-btn">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
-                                        </div>
+                                        <p>Perhaps the most challenging certification test I've taken. This certification consists of two parts, the first cert obtained is Cisco Certified Entry Network Technician (CCENT). This certification challenged my knowledge in internet protocols, networks, servers and clients. </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -389,10 +519,7 @@
                                     <div class="tab-bg">
                                         <h2>04</h2>
                                         <h3>ITIL® Foundation Certification - IT Service Management</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore hic error laboriosam eveniet veniam tempore sunt maxime cupiditate veritatis expedita, vel pariatur recusandae accusantium, dicta eaque atque aliquid vitae dolor.</p>
-                                        <div id="service-02-btn">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
-                                        </div>
+                                        <p>To obtain this certification I had to prove knowledge about best practices and frameworks to run a successful IT department, and it's day to day operations. </p>
                                     </div>
                                 </div>
                             </div>
@@ -411,10 +538,7 @@
                                     <div class="tab-bg">
                                         <h2>05</h2>
                                         <h3>Microsoft Office Specialist Access</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore hic error laboriosam eveniet veniam tempore sunt maxime cupiditate veritatis expedita, vel pariatur recusandae accusantium, dicta eaque atque aliquid vitae dolor.</p>
-                                        <div id="service-02-btn">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
-                                        </div>
+                                        <p>Certification achieved by demonstrating my ability to manage Access relational databases while building proper data queries to obtain information from such software.</p>
                                     </div>
                                 </div>
                             </div>
@@ -432,10 +556,7 @@
                                     <div class="tab-bg">
                                         <h2>06</h2>
                                         <h3>Microsoft Office Specialist Excel</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore hic error laboriosam eveniet veniam tempore sunt maxime cupiditate veritatis expedita, vel pariatur recusandae accusantium, dicta eaque atque aliquid vitae dolor.</p>
-                                        <div id="service-02-btn">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
-                                        </div>
+                                        <p>This certificate was earned by demonstrating that I had the skills necessary to manage spreadsheets. My current Excel knowledge is beyond the topics covered in this certification.</p>
                                     </div>
                                 </div>
                             </div>
@@ -453,10 +574,7 @@
                                     <div class="tab-bg">
                                         <h2>07</h2>
                                         <h3>Udacity Data Analyst Nanodegree</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore hic error laboriosam eveniet veniam tempore sunt maxime cupiditate veritatis expedita, vel pariatur recusandae accusantium, dicta eaque atque aliquid vitae dolor.</p>
-                                        <div id="service-02-btn">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
-                                        </div>
+                                        <p>This Nanodegree was a program I completed online at Udacity. During this course I used Python, SQL, R and statistics to uncover insights from data sets.</p>
                                     </div>
                                 </div>
                             </div>
@@ -469,8 +587,93 @@
     </section>
     <!--Services End-->
 
-    <!-- Portfolio -->
-    <section id="portfolio">
+    <!-- Skills -->
+    <section id="pricing">
+
+        <div class="content-box-md">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12 text-center wow slideInDown">
+                        <div class="horizontal-heading">
+                            <h5>What can I offer?</h5>
+                            <h2>My Skills</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-4 wow fadeInLeft">
+
+                        <!-- Pricing Table 01 -->
+                        <div class="pricing-table">
+                            <div class="type">
+                                <h4>Web Tools</h4>
+                            </div>
+
+                            <ul class="package">
+                                <li><i class="fa fa-check"></i>REST and SOAP</li>
+                                <li><i class="fa fa-check"></i>Chrome Developer Tools</li>
+                                <li><i class="fa fa-check"></i>React</li>
+                                <li><i class="fa fa-check"></i>Node</li>
+                                <li><i class="fa fa-check"></i>Bootstrap</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="3s">
+
+                        <!-- Pricing Table 02 -->
+                        <div class="pricing-table black">
+                            <div class="type">
+                                <h4>Languages</h4>
+                            </div>
+
+                            <ul class="package">
+                                <li><i class="fa fa-check"></i>JavaScript</li>
+                                <li><i class="fa fa-check"></i>Java</li>
+                                <li><i class="fa fa-check"></i>SQL</li>
+                                <li><i class="fa fa-check"></i>HTML/CSS</li>
+                                <li><i class="fa fa-check"></i>Spanish</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 wow fadeInRight">
+
+                        <!-- Pricing Table 03 -->
+                        <div class="pricing-table">
+                            <div class="type">
+                                <h4>Software</h4>
+                            </div>
+                            <ul class="package">
+                                <li><i class="fa fa-check"></i>Configure Price Quote (CPQ)</li>
+                                <li><i class="fa fa-check"></i>Salesforce CRM</li>
+                                <li><i class="fa fa-check"></i>Oracle CRM</li>
+                                <li><i class="fa fa-check"></i>Microsoft Excel and Access</li>
+                                <li><i class="fa fa-check"></i>Many text editors</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Pricing Ends -->
+
+    <section id="stats">
 
         <div class="content-box-md">
 
@@ -481,23 +684,53 @@
                     <div class="col-md-12 wow slideInLeft">
 
                         <div class="vertical-heading">
-                            <h5>Find Out Work</h5>
-                            <h2>About My<strong>Projects</strong></h2>
+                            <h5>Fun Facts</h5>
+                            <h2>We Deliver<br><strong>Excellent</strong> Services</h2>
                         </div>
 
                     </div>
 
-                    <div class="col-md-12">
+                </div>
 
-                        <!-- Portfolio Items Filters -->
-                        <div id="isotope-filters">
+                <div class="row wow fadeInUp" data-wow-duration="2s">
 
-                            <button class="btn active" data-filter="*"><span>All</span></button>
-                            <button class="btn" data-filter=".logo"><span>Logo</span></button>
-                            <button class="btn" data-filter=".web"><span>Web</span></button>
-                            <button class="btn" data-filter=".mobile"><span>Mobile</span></button>
-                            <button class="btn" data-filter=".desktop"><span>Desktop</span></button>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
 
+                        <!-- Stats Item 01 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-bar-chart"></i>
+                            <h3 class="counter">4</h3>
+                            <p>Years Experience</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+                        <!-- Stats Item 02 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-codepen"></i>
+                            <h3 class="counter">8</h3>
+                            <p>Projects Done</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+                        <!-- Stats Item 03 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-trophy"></i>
+                            <h3 class="counter">7</h3>
+                            <p>Certifications</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+
+                        <!-- Stats Item 04 -->
+                        <div class="stats-item text-center">
+                            <i class="fa fa-users"></i>
+                            <h3 class="counter">92</h3>
+                            <p>Open Source Repositories</p>
                         </div>
 
                     </div>
@@ -506,227 +739,12 @@
 
             </div>
 
-            <!-- Portfolio Items Wrapper -->
-            <section id="portfolio-wrapper" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-
-                <div class="container-fluid">
-
-                    <div class="row no-gutters">
-
-                        <div id="isotope-container">
-
-                            <div class="col-md-3 col-sm-6 col-xs-12 desktop">
-
-                                <!-- Portfolio Item 01 -->
-                                <div class="portfolio-item">
-
-                                    <a href="img/portfolio/001.jpg" title="Add Description">
-                                        <img src="img/portfolio/001.jpg" class="img-responsive" alt="portfolio 01">
-
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-
-                                                <!-- Item Header -->
-                                                <h3>Logo</h3>
-
-                                                <!-- Item Strips -->
-                                                <span></span>
-
-                                                <!-- Item Description -->
-                                                <p>Desktop, Design</p>
-
-                                            </div>
-
-                                        </div>
-                                    </a>
-
-                                </div>
-
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 web">
-                                <!-- Portfolio Item 02 -->
-                                <div class="portfolio-item">
-
-                                    <a href="img/portfolio/002.jpg" title="Add Description">
-                                        <img src="img/portfolio/002.jpg" class="img-responsive" alt="portfolio 02">
-
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-
-                                                <!-- Item Header -->
-                                                <h3>Photoshop</h3>
-
-                                                <!-- Item Strips -->
-                                                <span></span>
-
-                                                <!-- Item Description -->
-                                                <p>Web Design, Illustration</p>
-
-                                            </div>
-
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 web mobile logo">
-                                <!-- Portfolio Item 03 -->
-                                <div class="portfolio-item">
-
-                                    <a href="img/portfolio/003.jpg" title="Add Description">
-                                        <img src="img/portfolio/003.jpg" class="img-responsive" alt="portfolio 03">
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-                                                <!-- Item Header -->
-                                                <h3>
-                                                    Web Design
-                                                </h3>
-                                                <!-- Item Strips -->
-                                                <span></span>
-                                                <!-- Item Description -->
-                                                <p>
-                                                    Video, web
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 logo web">
-                                <!-- Portfolio Item 04 -->
-                                <div class="portfolio-item">
-
-                                    <a href="img/portfolio/004.jpg" title="Add Description">
-                                        <img src="img/portfolio/004.jpg" class="img-responsive" alt="portfolio 04">
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-                                                <!-- Item Header -->
-                                                <h3>
-                                                    Logo
-                                                </h3>
-                                                <!-- Item Strips -->
-                                                <span></span>
-                                                <!-- Item Description -->
-                                                <p>
-                                                    desktop, Design
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 web">
-                                <!-- Portfolio Item 05 -->
-                                <div class="portfolio-item">
-
-                                    <a href="img/portfolio/005.jpg" title="Add Description">
-                                        <img src="img/portfolio/005.jpg" class="img-responsive" alt="portfolio 05">
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-                                                <!-- Item Header -->
-                                                <h3>
-                                                    Photoshop
-                                                </h3>
-                                                <!-- Item Strips -->
-                                                <span></span>
-                                                <!-- Item Description -->
-                                                <p>
-                                                    Web Design, Illustration
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 logo desktop">
-                                <!-- Portfolio Item 06 -->
-                                <div class="portfolio-item">
-
-                                    <a href="img/portfolio/006.jpg" title="Add Description">
-                                        <img src="img/portfolio/006.jpg" class="img-responsive" alt="portfolio 06">
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-                                                <!-- Item Header -->
-                                                <h3>
-                                                    Logo
-                                                </h3>
-                                                <!-- Item Strips -->
-                                                <span></span>
-                                                <!-- Item Description -->
-                                                <p>
-                                                    desktop, Design
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 web mobile">
-                                <!-- Portfolio Item 07 -->
-                                <div class="portfolio-item">
-
-                                    <a href="img/portfolio/007.jpg" title="Add Description">
-                                        <img src="img/portfolio/007.jpg" class="img-responsive" alt="portfolio 07">
-
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-                                                <!-- Item Header -->
-                                                <h3>
-                                                    Photoshop
-                                                </h3>
-                                                <!-- Item Strips -->
-                                                <span></span>
-                                                <!-- Item Description -->
-                                                <p>
-                                                    Web Design, Illustration
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 web mobile">
-                                <!-- Portfolio Item 08 -->
-                                <div class="portfolio-item">
-
-                                    <a href="img/portfolio/008.jpg" title="Add Description">
-                                        <img src="img/portfolio/008.jpg" class="img-responsive" alt="portfolio 08">
-                                        <div class="portfolio-item-overlay">
-                                            <div class="portfolio-item-details text-center">
-                                                <!-- Item Header -->
-                                                <h3>
-                                                    Mobile Design
-                                                </h3>
-                                                <!-- Item Strips -->
-                                                <span></span>
-                                                <!-- Item Description -->
-                                                <p>
-                                                    Video, web
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
         </div>
 
     </section>
-    <!-- Portfolio Ends -->
+    <!-- Stats Ends -->
+
+
 
 
     <!-- Pets -->
@@ -742,7 +760,7 @@
 
                                 <h2>Meet My <strong id="little">Pets</strong><br>Shanti and Nala</h2>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quidem deleniti mollitia velit est ex eius, iste provident corporis sed ducimus consequuntur necessitatibus qui, quos voluptate. Asperiores repellat voluptatem libero.</p>
+                            <p>I work hard for my pets so they can have a great life! Shanti is a cat that we rescued while being abandoned in a gutter in Costa Rica. Nala is a Schnauzer that looks like a bunny. They both like to sleep, eat and cuddle!</p>
                         </div>
                     </div>
                     <!-- Team Right Side -->
@@ -774,6 +792,80 @@
             </div>
         </div>
     </section>
+    <!-- Pets End -->
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <div class="content-box-md">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <!-- Contact Left -->
+                        <div id="contact-left">
+
+                            <div class="vertical-heading">
+                                <h5>Contact Info</h5>
+                                <h2>Get<br>In <strong>Touch</strong></h2>
+                            </div>
+                            <p>For any questions or business ideas, please feel free to contact me.</p>
+
+                            <div id="offices">
+
+                                <div class="row">
+
+                                    <div class="col-md-6">
+
+                                        <div class="office">
+                                            <h4>United States</h4>
+                                            <ul class="office-details">
+                                                <li><i class="fa fa-mobile"></i><span>+1 (224) 240-0114</span></li>
+                                                <li><i class="fa fa-envelope"></i><span>kevin.e.green@hotmail.com</span></li>
+                                                <li><i class="fa fa-map-marker"></i><span>800 Hinman Ave<br>Evanston, IL.</span></li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Contact Ends -->
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Copyright &copy; 2018 All Rights Reserved by <span>Kevin Green</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End-->
+
+    <!-- Back to Top -->
+    <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll" title="home" role="button">
+    <i class="fa fa-angle-up"></i></a>
 
     <!-- JQuery -->
     <script src="js/jquery-3.3.1.js"></script>
@@ -789,6 +881,10 @@
     <script src="js/Isotope/isotope.pkgd.min.js"></script>
     <!-- Magnific -->
     <script src="js/magnific/jquery.magnific-popup.min.js"></script>
+    <!-- Counterup -->
+    <script src="js/counterup/jquery.counterup.min.js"></script>
+    <!-- Easing -->
+    <script src="js/easing/jquery.easing.1.3.js"></script>
     <!-- Custom JS -->
     <script src="js/scripts.js"></script>
 </body>
