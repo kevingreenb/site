@@ -30,7 +30,7 @@
          $(".progress-bar").each(function () {
              $(this).animate({
                  width: $(this).attr("aria-valuenow") + "%"
-             }, 1000);
+             }, 2000);
          });
 
          this.destroy();
@@ -92,7 +92,7 @@
  $(function () { // Short form on ready method
      $("#testimonial-slider").owlCarousel({
          items: 1,
-         autoplay: true,
+         autoplay: false,
          smartSpeed: 1000,
          loop: true,
          autoplayHoverPause: true,
@@ -144,3 +144,21 @@
          }, 1250, "easeInOutExpo");
      });
  });
+/* =========================================
+                Animation
+============================================ */
+// animate on scroll
+$(function () {
+    new WOW().init();
+});
+
+// home animation on page load
+$(window).on('load', function () {
+
+    $("#home-heading-1").addClass("animated fadeInDown");
+    $("#home-heading-2").addClass("animated fadeInLeft");
+    $("#home-text").addClass("animated zoomIn");
+    $("#home-btn").addClass("animated zoomIn");
+    $("#arrow-down i").addClass("animated fadeInDown infinite");
+
+});
